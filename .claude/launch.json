@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "altinnenelektro-redesign",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "3042", "--directory", "C:\\Users\\adria\\website-mirrors\\altinnenelektro-redesign"],
+      "port": 3042
+    }
+  ]
+}

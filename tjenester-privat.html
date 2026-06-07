@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tjenester for privatmarkedet | Alt innen elektro Oslo</title>
+  <meta name="description" content="Elektrotjenester for privatmarkedet i Oslo. Solcelle, belysning, sikkerhet, nybygg, elbillading og mer.">
+  <meta name="theme-color" content="#FFC420">
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="subpage.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <img src="assets/logo.jpg" alt="Alt innen elektro Oslo" height="60">
+      </a>
+      <nav class="header__nav" id="mainNav" aria-label="Navigasjon">
+        <ul>
+          <li class="has-sub">
+            <a href="#" aria-haspopup="true">Tjenester</a>
+            <ul class="submenu">
+              <li><a href="tjenester-privat.html">Privat</a></li>
+              <li><a href="tjenester-naring.html">Næringsliv</a></li>
+            </ul>
+          </li>
+          <li><a href="om-oss.html">Om oss</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="header__cta">
+        <a href="tel:46243637" class="btn btn--ghost">46 24 36 37</a>
+        <a href="kontakt.html" class="btn btn--primary">Kontakt oss</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Meny" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Mobilmeny">
+    <div class="drawer__inner">
+      <button class="drawer__close" id="drawerClose" aria-label="Lukk meny">&times;</button>
+      <nav aria-label="Mobilnavigasjon">
+        <ul>
+          <li><a href="tjenester-privat.html">Tjenester privat</a></li>
+          <li><a href="tjenester-naring.html">Tjenester næringsliv</a></li>
+          <li><a href="om-oss.html">Om oss</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="drawer__contact">
+        <a href="tel:46243637" class="btn btn--primary btn--full">Ring 46 24 36 37</a>
+        <a href="kontakt.html" class="btn btn--outline btn--full">Send en melding</a>
+      </div>
+    </div>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <main>
+    <div class="subpage-hero">
+      <div class="container">
+        <h1>Tjenester for privatmarkedet</h1>
+        <p>Vi hjelper deg med alle typer elektrooppdrag i hjemmet ditt.</p>
+        <div class="subpage-tabs">
+          <a href="tjenester-privat.html" class="btn btn--primary">Privat</a>
+          <a href="tjenester-naring.html" class="btn btn--ghost">Næringsliv</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="section section--light">
+      <div class="container">
+        <div class="service-grid" id="privat"></div>
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <div class="container">
+        <div class="cta-banner__inner reveal">
+          <h2>Klar for et elektrooppdrag?</h2>
+          <p>Ta kontakt med oss i dag for et uforpliktende tilbud.</p>
+          <div class="cta-banner__actions">
+            <a href="kontakt.html" class="btn btn--primary btn--lg">Kontakt oss</a>
+            <a href="tel:46243637" class="btn btn--outline-light btn--lg">Ring 46 24 36 37</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/logo.jpg" alt="Alt innen elektro Oslo" height="50">
+          <p>Din lokale elektriker i Oslo og omegn.</p>
+        </div>
+        <div class="footer__links">
+          <h4>Tjenester</h4>
+          <ul>
+            <li><a href="tjenester-privat.html">Privat</a></li>
+            <li><a href="tjenester-naring.html">Næringsliv</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>Selskapet</h4>
+          <ul>
+            <li><a href="om-oss.html">Om oss</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="personvernerklaering.html">Personvern</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h4>Kontakt</h4>
+          <p><a href="tel:46243637">46 24 36 37</a></p>
+          <a href="kontakt.html" class="btn btn--primary btn--sm">Send melding</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>En del av <a href="https://www.sikringen.no/" target="_blank" rel="noopener">Sikringen</a></p>
+        <p>&copy; 2026 Alt innen elektro Oslo. Alle rettigheter forbeholdt.</p>
+        <p class="footer__credit">Nettside levert av <a href="https://dmarketing.no" target="_blank" rel="noopener">Dietrichs Marketing</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
